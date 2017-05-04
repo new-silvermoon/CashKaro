@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.silvermoon.cashkaro.MainScreenDealsFragment">
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cardView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/card_margin"
+        android:background="?android:selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/sportsImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/sportsImage"
+                android:padding="@dimen/card_margin"
+                android:text="Title"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+            <TextView
+                android:id="@+id/couponTitle"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sportsImage"
+                android:padding="@dimen/card_margin"
+                android:text="Dark Knight"
+                android:textColor="?android:textColorSecondary" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shareButton"
+                android:layout_below="@id/sportsImage"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_share_button"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/favButton"
+                android:layout_below="@id/sportsImage"
+                android:layout_toLeftOf="@+id/shareButton"
+                android:background="@drawable/ic_favorite_empty"/>
+
+
+            <TextView
+                android:id="@+id/couponDetails"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/couponTitle"
+                android:padding="@dimen/card_margin"
+                android:text="Buy with 5% cashback" />
+            <TextView
+                android:id="@+id/additionalInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expires in 1 day"
+                android:layout_below="@+id/couponDetails"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Offer"
+                android:textColor="#ffffff"
+                android:background="@color/storeButton"
+                android:id="@+id/getCodeButton"
+                android:layout_below="@+id/additionalInfo"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/card_margin"
+        android:background="?android:selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/sportsImage2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/title2"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/sportsImage2"
+                android:padding="@dimen/card_margin"
+                android:text="Title"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+            <TextView
+                android:id="@+id/couponTitle2"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sportsImage2"
+                android:padding="@dimen/card_margin"
+                android:text="Everest"
+                android:textColor="?android:textColorSecondary" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shareButton2"
+                android:layout_below="@id/sportsImage2"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_share_button"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/favButton2"
+                android:layout_below="@id/sportsImage2"
+                android:layout_toLeftOf="@+id/shareButton2"
+                android:background="@drawable/ic_favorite_empty"/>
+
+
+            <TextView
+                android:id="@+id/couponDetails2"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/couponTitle2"
+                android:padding="@dimen/card_margin"
+                android:text="Buy with 4% cashback" />
+            <TextView
+                android:id="@+id/additionalInfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expires in 2 days"
+                android:layout_below="@+id/couponDetails2"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Offer"
+                android:textColor="#ffffff"
+                android:background="@color/storeButton"
+                android:id="@+id/getCodeButton2"
+                android:layout_below="@+id/additionalInfo2"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

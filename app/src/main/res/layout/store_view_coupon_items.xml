@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    android:background="?android:selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/sportsImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sportsImage"
+            android:padding="@dimen/card_margin"
+            android:text="Title"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+        <TextView
+            android:id="@+id/couponTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sportsImage"
+            android:padding="@dimen/card_margin"
+            android:text="Coupon Title"
+            android:textColor="?android:textColorSecondary" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shareButton"
+            android:layout_below="@id/sportsImage"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_share_button"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/favButton"
+            android:layout_below="@id/sportsImage"
+            android:layout_toLeftOf="@+id/shareButton"
+            android:background="@drawable/ic_favorite_empty"/>
+
+
+        <TextView
+            android:id="@+id/couponDetails"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/couponTitle"
+            android:padding="@dimen/card_margin"
+            android:text="Coupon Details" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Code"
+            android:textColor="#ffffff"
+            android:background="@color/storeButton"
+            android:id="@+id/getCodeButton"
+            android:layout_below="@+id/couponDetails"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/additionalInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Info"
+            android:layout_below="@+id/couponDetails"
+            android:layout_toRightOf="@+id/getCodeButton"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.silvermoon.storepage.StorePageActivity"
+    android:orientation="vertical"
+    android:id="@+id/storeParentLayout">
+<RelativeLayout
+    android:id="@+id/storeBannerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+   <!-- android:background="@drawable/deal1">-->
+   <ImageView
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/flipkart_store"
+       android:id="@+id/headerImage"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOP NOW"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/shopNowButton"
+        android:textColor="#ffffff"
+        android:background="@color/storeButton"
+        android:onClick="openStoreWebView"
+        android:layout_below="@+id/headerImage"
+        />
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/storeHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Store Heading"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/cashback_rates"></Spinner>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/store_page_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
