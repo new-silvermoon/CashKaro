@@ -2,7 +2,7 @@
 Shell app developed for cashkaro.com
 
 
-Concepts used: Activity, Fragment, Fragment page adapter, Service, Broadcast receiver,Content provider, Sqlite database,
+Concepts used: Facebook API,Activity, Fragment, Fragment page adapter, Service, Broadcast receiver,Content provider, Sqlite database,
 Loaders, Async Task, JSON data parsing, Alert dialog, Notification, Share action intent, Permission manager, WebView, Carousel View, Recyler View,Firebase integration,etc.
 
 
